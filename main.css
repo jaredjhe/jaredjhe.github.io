@@ -5,11 +5,21 @@ body {
 body h1, body i {
     font-size: 3rem;
     font-weight: 500;
-    text-transform: uppercase;
 }
 
 body p {
     font-size: 2rem;
+}
+
+.page-section {
+    width: 100%;
+    padding: 70px 50px;
+    overflow: hidden;
+}
+
+.page-section h1 {
+    text-transform: uppercase;
+    margin-bottom: 0px;
 }
 
 nav {
@@ -85,11 +95,8 @@ nav a:hover {
 }
 
 #about {
-    width: 100%;
     min-height: 500px;
     background-color: #E7E4E1;
-    padding: 70px 50px;
-    overflow: hidden;
 }
 
 #about .about-title {
@@ -107,7 +114,6 @@ nav a:hover {
 #about hr {
     border-top: 3px solid #000000;
     width: 100%;
-    margin-top: 5px;
     margin-left: 40px;
 }
 
@@ -127,11 +133,8 @@ nav a:hover {
 }
 
 #resume {
-    width: 100%;
     min-height: 500px;
     background-color: #000000;
-    padding: 70px 50px;
-    overflow: hidden;
 }
 
 #resume .resume-title {
@@ -150,6 +153,46 @@ nav a:hover {
 }
 
 #resume h1 {
+    color: #FF4500
+}
+
+#projects {
+    min-height: 500px;
+    background-color: #E7E4E1;
+}
+
+#projects .projects-title {
+    display: flex;
+    align-items: center;
+}
+
+#projects hr {
+    border-top: 3px solid #000000;
+    width: 100%;
+    margin: 0px 40px;
+}
+
+#contact {
+    min-height: 500px;
+    background-color: #000000;
+}
+
+#contact .contact-title {
+    display: flex;
+    align-items: center;
+}
+
+#contact i {
+    color: #FF4500;
+}
+
+#contact hr {
+    border-top: 3px solid #FF4500;
+    width: 100%;
+    margin: 0px 40px;
+}
+
+#contact h1 {
     color: #FF4500
 }
 
@@ -176,16 +219,16 @@ img {
 
 /* styles for small screens */
 @media only screen and (max-width: 768px) {
+    .page-section {
+        padding: 50px 50px;
+    }
+
     #home h1 {
         font-size: 3rem;
     }
 
     #home h2 {
         font-size: 1.5rem;
-    }
-
-    #about {
-        padding: 50px 50px;
     }
 
     #about .about-title {
