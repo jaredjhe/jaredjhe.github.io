@@ -160,13 +160,22 @@ nav a:hover {
 
 #resume button {
     background-color: #FF4500;
-    color: #000000;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
     border: none;
     border-radius: 5px;
     width: 400px;
     height: 80px;
     align-self: center;
     margin-top: 50px;
+}
+
+#resume .fa-file-download {
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin-left: 10px;
 }
 
 #projects {
@@ -245,17 +254,17 @@ img {
     }
 
     #about .about-title {
-        display: block;
+        flex-flow: column;
         width: 100%;
         padding-bottom: 0px;
     }
 
-    #about h1 {
+    #about .about-title h1 {
         text-align: center;
         margin-right: 0px;
     }
 
-    #about hr {
+    #about .about-title hr {
         margin-left: 0px;
     }
 
@@ -263,7 +272,23 @@ img {
         float: none;
         width: 200px;
         height: 200px;
-        margin: 30px auto;
+        margin: 10px auto 30px auto;
+    }
+
+    #about p {
+        text-align: center;
+    }
+
+    #resume .resume-title {
+        flex-flow: column; 
+    }
+
+    #resume .resume-title h1 {
+        order: -1;
+    }
+
+    #resume .resume-title .fa-file-alt {
+        align-self: flex-end;
     }
 }
 
