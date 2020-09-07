@@ -228,8 +228,16 @@ nav a:hover {
     color: #FF4500
 }
 
-#contact i {
+#contact a  {
+    text-decoration: none;
+}
+
+#contact a i {
     color: #FF4500;
+}
+
+#contact a i:hover {
+    color: #DE3B04;
 }
 
 /* TEMPORARY -- MUST CHANGE */
