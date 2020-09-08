@@ -15,17 +15,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Jared He's Website</title>
+
+        <!--CSS-->
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
         
+        <!--Javascript-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="bootstrap.min.js"></script>
         
+        <!--Fonts and Icons-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b107163c29.js" crossorigin="anonymous"></script>
+        
+        <!--Initialize bootstrap tooltips-->
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
     </head>
     
     <body>
@@ -86,20 +96,56 @@
                 <hr>
                 <i class="fas fa-tools"></i>
             </div>
-            <div class="project-grid">
-                <div class="project1">
-                    <div class="project-image">
-
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="project">
+                            <div class="project-image">
+    
+                            </div>
+                            <div class="project-label">
+                                <h2>Personal Website</h2>
+                                <p>
+                                    This is the site that you are on! Designed from scratch without a template. Loekowoierhiuewby iuwerhouewhruiewhri iuewhr uiewhou uewiu grei ewurg ewhio ew riuewrh 
+                                </p>
+                                <div class="languages">
+                                    <i class="fab fa-html5" data-toggle="tooltip" title="HTML5"></i>
+                                    <i class="fab fa-css3-alt" data-toggle="tooltip" title="CSS3"></i>
+                                    <i class="fab fa-bootstrap" data-toggle="tooltip" title="Bootstrap"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-label">
-                        <h3>Personal Website</h3>
-                        <p>
-                            This is the site that you are on! Designed from scratch without a template.
-                        </p>
-                        <div class="languages">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-bootstrap"></i>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="project">
+                            <div class="project-image">
+    
+                            </div>
+                            <div class="project-label">
+                                <h2></h2>
+                                <p>
+
+                                </p>
+                                <div class="languages">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="project">
+                            <div class="project-image">
+    
+                            </div>
+                            <div class="project-label">
+                                <h2></h2>
+                                <p>
+
+                                </p>
+                                <div class="languages">
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -125,5 +171,6 @@
             </div>
             <div class="copyright">© Jared He 2020</div>
         </section>
+        <!-- <script src="main.js"></script> -->
     </body>
 </html>
