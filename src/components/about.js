@@ -1,7 +1,7 @@
 import "./about.scss";
 import { MainTheme } from "./themeWrappers";
 
-function About(props) {
+function About() {
     return(
         <MainTheme>
             <h2>About Me</h2>
