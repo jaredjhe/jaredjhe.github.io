@@ -1,17 +1,18 @@
 import { useState } from "react";
 import Heading from "./components/heading";
+import About from "./components/about";
 import { ThemeProvider } from "styled-components";
 
 const lightTheme = {
     textColor: "#000000",
-    backgroundColor: "#E7E4E1",
-    backgroundHighlight: "#FFFFFF"
+    backgroundMainColor: "#E7E4E1",
+    backgroundSecondaryColor: "#FFFFFF"
 }
 
 const darkTheme = {
     textColor: "#FFFFFF",
-    backgroundColor: "#000000",
-    backgroundHighlight: "#E7E4E1"
+    backgroundMainColor: "#000000",
+    backgroundSecondaryColor: "#7A7774"
 }
 
 const themes = {
@@ -25,6 +26,7 @@ function App() {
     return (
         <ThemeProvider theme={themes[theme]}>
             <Heading theme={theme} setTheme={setTheme} />
+            <About theme={theme}/>
         </ThemeProvider>
     );
 }

@@ -1,11 +1,5 @@
 import "./heading.scss";
-import styled from "styled-components";
-
-const ThemeWrapper = styled.div`
-    color: ${props => props.theme.textColor};
-    background-color: ${props => props.theme.backgroundColor};
-    transition: all .5s ease;
-    `
+import { SecondaryTheme } from "./themeWrappers";
 
 function Heading(props) {
     
@@ -18,10 +12,10 @@ function Heading(props) {
     }
 
     return(      
-        <ThemeWrapper>
+        <SecondaryTheme>
             <h1>Hi, I'm <span>Jared He!</span></h1>
             <button onClick={changeTheme}>Change Color</button>
-        </ThemeWrapper>
+        </SecondaryTheme>
     );
 }
 
