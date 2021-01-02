@@ -1,18 +1,17 @@
-import './app.scss';
+import { useState } from "react";
+import Heading from "./components/heading";
 import { ThemeProvider } from "styled-components";
 
 const lightTheme = {
-    mainColor: "FF4500",
-    secondaryColor: "#CC3600",
+    textColor: "#000000",
     backgroundColor: "#E7E4E1",
     backgroundHighlight: "#FFFFFF"
 }
 
 const darkTheme = {
-    mainColor: "FF4500",
-    secondaryColor: "#CC3600",
+    textColor: "#FFFFFF",
     backgroundColor: "#000000",
-    backgroundHighlight: "#000000"
+    backgroundHighlight: "#E7E4E1"
 }
 
 const themes = {
@@ -21,12 +20,13 @@ const themes = {
 }
 
 function App() {
-  return (
-      <ThemeProvider>
-        <h1>Hello World!</h1>
-        <p>Paragraph</p>
-      </ThemeProvider>
-  );
+    const [theme, setTheme] = useState("light");
+
+    return (
+        <ThemeProvider theme={themes[theme]}>
+            <Heading theme={theme} setTheme={setTheme} />
+        </ThemeProvider>
+    );
 }
 
 export default App;
