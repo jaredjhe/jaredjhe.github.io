@@ -1,4 +1,14 @@
+@import "~bootstrap/scss/bootstrap";
+
 body {
-  font-family: 'Montserrat';
-  font-size: 2em;
+  font-family: 'Montserrat', 'Verdana', sans-serif;
+
+  i, h1 {
+      font-size: 3rem;
+      font-weight: 500;
+  }
+
+  p {
+      font-size: 2rem;
+  }
 }
