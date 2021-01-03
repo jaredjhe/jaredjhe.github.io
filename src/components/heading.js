@@ -13,8 +13,10 @@ function Heading(props) {
 
     return(      
         <SecondaryTheme>
-            <h1>Hi, I'm <span>Jared He!</span></h1>
-            <button onClick={changeTheme}>Change Color</button>
+            <div class="heading">
+                <h1>Hi, I'm <span>Jared He!</span></h1>
+                <button onClick={changeTheme}>Change Color</button>
+            </div>
         </SecondaryTheme>
     );
 }

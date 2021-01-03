@@ -1,4 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
+@import "./src/variables.scss";
 
 body {
   font-family: 'Montserrat', 'Verdana', sans-serif;
@@ -16,5 +17,9 @@ body {
 
   p {
       font-size: 2rem;
+    }
+
+  span {
+        color: $main-color;
   }
 }

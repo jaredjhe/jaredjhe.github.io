@@ -1,5 +1,8 @@
+import "./app.scss";
 import { useState } from "react";
+import { Container, Col, Row } from "react-bootstrap";
 import { ThemeProvider } from "styled-components";
+
 import Heading from "./components/heading";
 import About from "./components/about";
 import Sidebar from "./components/sidebar";
@@ -27,9 +30,17 @@ function App() {
 
     return (
         <ThemeProvider theme={themes[theme]}>
-            <Sidebar/>
-            <Heading theme={theme} setTheme={setTheme} />
-            <About theme={theme}/>
+            <Container style={{paddingLeft: 0, paddingRight: 0}} fluid>
+                <Row noGutters={true}>
+                    <Col sm={3}>
+                        <Sidebar />
+                    </Col>
+                    <Col sm={9}>
+                        <Heading theme={theme} setTheme={setTheme} />
+                        <About theme={theme} />
+                    </Col>
+                </Row>
+            </Container>
         </ThemeProvider>
     );
 }
