@@ -1,12 +1,14 @@
 @import "../variables.scss";
+@import "../mixins.scss";
 
 $toggle-width: 100px;
 $toggle-height: $toggle-width / 2;
 
 .heading {
-    display: flex;
-    flex-direction: row;
+    @include flex-center;
     justify-content: space-around;
+    
+    @include content-padding;
 
     .toggle-dark-mode {
         cursor: pointer;
@@ -28,6 +30,7 @@ $toggle-height: $toggle-width / 2;
             transition: all .5s ease;
 
             .toggle-dark-mode-icon {
+                @include flex-center;
                 position: absolute;
                 top: -3px;
                 left: -3px;
@@ -37,10 +40,6 @@ $toggle-height: $toggle-width / 2;
                 background-color: $main-color;
                 box-shadow: 0 0 10px rgba($color: black, $alpha: 0.75);
                 transition: all 0.5s ease;
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
             }
         }
     

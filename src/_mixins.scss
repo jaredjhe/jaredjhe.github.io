@@ -1,0 +1,15 @@
+@import "./variables.scss";
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin content-padding {
+    padding: 70px 50px;
+
+    @media only screen and (max-width: $sm) {
+        padding: 50px 50px;
+    }
+}

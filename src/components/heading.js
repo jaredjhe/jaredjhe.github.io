@@ -1,6 +1,6 @@
 import "./heading.scss";
 import { SecondaryTheme } from "./themeWrappers";
-import {IoSunny, IoMoon, IoBluetooth} from "react-icons/io5";
+import {IoSunny, IoMoon} from "react-icons/io5";
 
 const sunStyles = {
     height: "60%",
@@ -29,7 +29,7 @@ function Heading(props) {
 
     return (
         <SecondaryTheme>
-            <div class="heading">
+            <div className="heading">
                 <h1>Hi, I'm <span>Jared He!</span></h1>
                 <label className="toggle-dark-mode">
                     <input type="checkbox" className="toggle-dark-mode-input" onClick={changeTheme}></input>
