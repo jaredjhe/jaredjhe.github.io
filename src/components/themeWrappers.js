@@ -14,5 +14,7 @@ export const SecondaryTheme = styled.div`
 
 export const H2Line = styled.hr`
     background-color: ${props => props.theme.textColor};
+    width: 100%;
     height: 3px;
+    transition: all .5s ease;
 `

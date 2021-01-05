@@ -14,3 +14,12 @@
         padding: 50px 50px;
     }
 }
+
+@mixin content-title {
+    @include flex-center(row);
+
+    h2 {
+        margin-right: 30px;
+        white-space: nowrap;
+    }
+}
