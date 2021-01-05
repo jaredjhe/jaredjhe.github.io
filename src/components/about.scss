@@ -1,5 +1,14 @@
 @import "../variables.scss";
+@import "../mixins.scss";
 
-span {
-    color: $main-color;
+.about {
+    @include content-padding;
+
+    p {
+        line-height: 175%;
+    }
+
+    span {
+        color: $main-color;
+    }
 }

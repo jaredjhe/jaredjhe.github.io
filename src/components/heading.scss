@@ -5,9 +5,9 @@ $toggle-width: 100px;
 $toggle-height: $toggle-width / 2;
 
 .heading {
-    @include flex-center;
-    justify-content: space-around;
-    
+    @include flex-center(row);
+    justify-content: space-between;
+
     @include content-padding;
 
     .toggle-dark-mode {
@@ -30,7 +30,7 @@ $toggle-height: $toggle-width / 2;
             transition: all .5s ease;
 
             .toggle-dark-mode-icon {
-                @include flex-center;
+                @include flex-center(row);
                 position: absolute;
                 top: -3px;
                 left: -3px;

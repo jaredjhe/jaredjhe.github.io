@@ -1,13 +1,14 @@
 @import "./variables.scss";
 
-@mixin flex-center {
+@mixin flex-center($direction) {
     display: flex;
+    flex-direction: $direction;
     justify-content: center;
     align-items: center;
 }
 
 @mixin content-padding {
-    padding: 70px 50px;
+    padding: 50px 50px;
 
     @media only screen and (max-width: $sm) {
         padding: 50px 50px;
