@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-@import "./sass/variables.scss";
+@import "./sass-imports/variables.scss";
 
 body {
   font-family: 'Montserrat', 'Verdana', sans-serif;
@@ -7,12 +7,20 @@ body {
   h1 {
       font-size: 4rem;
       font-weight: 500;
+
+      @media only screen and (max-width: $lg) {
+        font-size: 3em;
+    }
   }
 
   h2 {
       font-size: 3rem;
       font-weight: 700;
       text-transform: uppercase;
+
+      @media only screen and (max-width: $md) {
+          
+      }
   }
 
   p {

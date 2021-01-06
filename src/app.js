@@ -4,8 +4,9 @@ import { Container, Col, Row } from "react-bootstrap";
 import { ThemeProvider } from "styled-components";
 
 import Heading from "./components/heading";
-import About from "./components/about";
 import Sidebar from "./components/sidebar";
+import About from "./components/about";
+import Skills from "./components/skills"
 
 
 const lightTheme = {
@@ -37,7 +38,8 @@ function App() {
                     </Col>
                     <Col sm={9}>
                         <Heading theme={theme} setTheme={setTheme} />
-                        <About theme={theme} />
+                        <About />
+                        <Skills />
                     </Col>
                 </Row>
             </Container>

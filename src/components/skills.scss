@@ -1,0 +1,10 @@
+@import "../sass-imports/variables.scss";
+@import "../sass-imports/mixins.scss";
+
+.skills {
+    @include content-padding;
+
+    .skills-title {
+        @include content-title;
+    }
+}
