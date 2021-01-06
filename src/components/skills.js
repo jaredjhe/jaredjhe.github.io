@@ -1,7 +1,7 @@
 import "./skills.scss";
-import { SecondaryTheme, H2Line } from "./themeWrappers";
+import { SecondaryTheme, H2Line } from "./theme-wrappers";
 
-function About() {
+function Skills() {
     return (
         <SecondaryTheme>
             <div className="skills">
@@ -15,4 +15,4 @@ function About() {
     )
 }
 
-export default About;
+export default Skills;

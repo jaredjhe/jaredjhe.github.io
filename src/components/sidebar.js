@@ -1,5 +1,5 @@
 import "./sidebar.scss";
-import profilePicture from "../assets/profile-picture.jpg";
+import ProfilePicture from "./profile-picture"
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 
@@ -11,8 +11,8 @@ const iconStyle = {
 function Sidebar() {
     return (
         <div className="sidebar">    
-            <img src={profilePicture} alt="Jared He"/>
-            <h1>Jared He</h1>
+            <ProfilePicture />
+            <h3>Jared He</h3>
             <hr />
             <div className="nav-links">
             </div>

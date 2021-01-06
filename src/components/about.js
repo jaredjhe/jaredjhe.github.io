@@ -1,5 +1,5 @@
 import "./about.scss";
-import { MainTheme, H2Line } from "./themeWrappers";
+import { MainTheme, H2Line } from "./theme-wrappers";
 
 function About() {
     return (
