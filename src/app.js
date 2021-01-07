@@ -39,7 +39,7 @@ function App() {
                     <Col sm={9}>
                         <Heading theme={theme} setTheme={setTheme} />
                         <About />
-                        <Skills />
+                        <Skills theme={theme}/>
                     </Col>
                 </Row>
             </Container>
