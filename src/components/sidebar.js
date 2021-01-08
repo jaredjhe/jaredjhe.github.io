@@ -10,7 +10,7 @@ const iconStyle = {
 
 function Sidebar() {
     return (
-        <div className="sidebar">    
+        <div className="sidebar">
             <ProfilePicture />
             <h3>Jared He</h3>
             <hr />
