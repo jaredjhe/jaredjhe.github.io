@@ -33,6 +33,7 @@ body {
 
     p {
         font-size: 2rem;
+        margin-bottom: 0;
 
         @media only screen and (max-width: $md) {
             font-size: 1.5rem;

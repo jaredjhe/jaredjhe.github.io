@@ -28,20 +28,6 @@
         height: 3px;
     }
 
-    .social-links {
-        width: 50%;
-        @include flex-center(row);
-        justify-content: space-around;
-
-        a {
-            color: white;
-
-            :hover {
-                color: $main-color;
-            }
-        }
-    }
-
     @media only screen and (max-width: $xs) {
         display: none;
     }
