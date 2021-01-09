@@ -1,10 +1,18 @@
 @import "../sass-imports/variables.scss";
 @import "../sass-imports/mixins.scss";
 
-.skills {
-    @include content-padding;
+.skills-scroll-wrapper {
+    padding: 2px 0px;
+    
+    .skills {
+        @include content-padding;
 
-    .skills-title {
-        @include content-title;
+        .skills-title {
+            @include content-title;
+        }
+
+        .skills-carousel {
+            @include flex-center(row);
+        }
     }
 }

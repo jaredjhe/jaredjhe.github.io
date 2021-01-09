@@ -3,10 +3,11 @@ import { useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { ThemeProvider } from "styled-components";
 
-import Heading from "./components/heading";
 import Sidebar from "./components/sidebar";
+import Heading from "./components/heading";
 import About from "./components/about";
-import Skills from "./components/skills"
+import Skills from "./components/skills";
+import Projects from "./components/projects"
 
 
 const lightTheme = {
@@ -31,15 +32,18 @@ function App() {
 
     return (
         <ThemeProvider theme={themes[theme]}>
-            <Container style={{paddingLeft: 0, paddingRight: 0}} fluid>
+            <Container style={{ paddingLeft: 0, paddingRight: 0 }} fluid>
                 <Row noGutters={true}>
                     <Col sm={3}>
                         <Sidebar />
                     </Col>
                     <Col sm={9}>
-                        <Heading theme={theme} setTheme={setTheme} />
-                        <About />
-                        <Skills theme={theme}/>
+                        <div id="home-scroll">
+                            <Heading theme={theme} setTheme={setTheme} />
+                            <About />
+                        </div>
+                        <Skills theme={theme} />
+                        <Projects />
                     </Col>
                 </Row>
             </Container>

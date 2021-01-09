@@ -1,8 +1,10 @@
 @import "../sass-imports/variables.scss";
 @import "../sass-imports/mixins.scss";
 
-.heading {
+.projects {
     @include content-padding;
-    @include flex-center(row);
-    justify-content: space-between;
+
+    .projects-title {
+        @include content-title;
+    }
 }

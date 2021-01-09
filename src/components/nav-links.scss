@@ -1,0 +1,39 @@
+@import "../sass-imports/variables.scss";
+@import "../sass-imports/mixins.scss";
+
+.nav-links {
+    a {
+        text-decoration: none;
+
+        :hover {
+            color: green;
+        }
+
+        .nav-link {
+            @include flex-center(row);
+            width: 100%;
+        }
+
+        svg {
+            margin-right: 20px;
+            font-size: 1.5rem;
+
+            @media only screen and (max-width: $lg) {
+                font-size: 1rem;
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+
+            @media only screen and (max-width: $lg) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    a.active {
+        text-decoration: none;
+        color: $main-color;
+    }
+}

@@ -4,7 +4,7 @@ import { MainTheme, H2Line } from "./theme-wrappers";
 function About() {
     return (
         <MainTheme>
-            <div className="about">
+            <div className="about" id="home-scroll">
                 <div className="about-title">
                     <h2>About Me</h2>
                     <H2Line/>
