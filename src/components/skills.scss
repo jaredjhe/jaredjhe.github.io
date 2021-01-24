@@ -11,8 +11,12 @@
             @include content-title;
         }
 
-        .skills-carousel {
+        .front-end {
             @include flex-center(row);
+
+            > * {
+                margin-left: 20px;
+            }
         }
     }
 }
