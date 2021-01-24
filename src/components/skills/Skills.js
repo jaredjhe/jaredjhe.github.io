@@ -26,7 +26,7 @@ function Skills(props) {
                                 <Col><SkillButton color={"#57B6EC"} text={"React"} logo={<FaReact />} theme={props.theme} /></Col>
                                 <Col><SkillButton color={"#E34c26"} text={"HTML5"} logo={<FaHtml5 />} theme={props.theme} /></Col>
                                 <Col><SkillButton color={"#2965F1"} text={"CSS3"} logo={<FaCss3Alt />} theme={props.theme} /></Col>
-                                <Col><SkillButton color={"#EBCE14"} text={"Js"} logo={<FaJs />} theme={props.theme} /></Col>
+                                <Col><SkillButton color={"#EBCE14"} text={"JavaScript"} smallText={true} logo={<FaJs />} theme={props.theme} /></Col>
                                 <Col><SkillButton color={"#563D7C"} text={"Bootstrap"} smallText={true} logo={<FaBootstrap />} theme={props.theme} /></Col>
                                 <Col><SkillButton color={"#CC6699"} text={"Sass"} logo={<FaSass />} theme={props.theme} /></Col>
                             </Row>

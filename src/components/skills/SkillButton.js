@@ -17,7 +17,7 @@ function SkillButton(props) {
 
     const [isHovered, setIsHovered] = useState(false);
 
-    const fontSize = props.smallText ? {fontSize: "0.75em"} : {fontSize: "1em"};
+    const fontSize = props.smallText ? { fontSize: "0.6em" } : { fontSize: "1em" };
 
     return (
         <motion.div>
@@ -28,7 +28,8 @@ function SkillButton(props) {
                     isHovered={isHovered}
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
-                    className="main-button-content">
+                    className="main-button-content"
+                >
                     <p style={fontSize}>{props.text}</p>
                     {props.logo}
                 </MainButton>

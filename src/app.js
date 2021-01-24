@@ -43,7 +43,7 @@ function App() {
                             <About />
                         </div>
                         <Skills theme={theme} />
-                        <Projects />
+                        <Projects theme={theme}/>
                     </Col>
                 </Row>
             </Container>
