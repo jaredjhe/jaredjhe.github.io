@@ -9,12 +9,15 @@ const MainButton = styled.div`
     border: 3px solid ${props => props.theme.textColor};
     width: 100%;
     height: 100%;
+    margin: 20px 0px;
     transition: all 1s ease;
 `
 
 function SkillButton(props) {
 
     const [isHovered, setIsHovered] = useState(false);
+
+    const fontSize = props.smallText ? {fontSize: "0.75em"} : {fontSize: "1em"};
 
     return (
         <motion.div>
@@ -26,8 +29,8 @@ function SkillButton(props) {
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                     className="main-button-content">
-                    <p>{props.text}</p>
-                    <div className="logo">{props.logo}</div>
+                    <p style={fontSize}>{props.text}</p>
+                    {props.logo}
                 </MainButton>
             </div>
 

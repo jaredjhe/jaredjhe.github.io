@@ -2,33 +2,24 @@
 @import "../../sass-imports/mixins.scss";
 
 .main-button {
-    width: 200px;
-    height: 80px;
-
-    @media only screen and (max-width: $md) {
-        width: 75%;
-    }
+    width: 95%;
+    height: 70px;
+    font-size: 1.5em;
 
     .main-button-content {
         @include flex-center(row);
         border-radius: $border-radius-skill-button;
 
         p {
-            font-size: 2em;
             font-weight: 700;
             text-transform: uppercase;
             margin-right: 5px;
+            margin-top: 0;
         }
 
-        .logo {
-            width: 20%;
-            height: 40%;
+        svg {
+            font-size: 1.4em;
             margin-left: 5px;
-
-            svg {
-                width: 100%;
-                height: 100%;
-            }
         }
     }
 }

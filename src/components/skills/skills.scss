@@ -11,12 +11,18 @@
             @include content-title;
         }
 
-        .front-end {
+        .skills-subtitle {
             @include flex-center(row);
+            padding-top: 20px;
 
-            > * {
-                margin-left: 20px;
+            svg {
+                margin-right: 20px;
+                font-size: 2em;
             }
+        }
+
+        #front-end {
+            padding-top: 0;
         }
     }
 }
