@@ -4,24 +4,29 @@ import { Tooltip, OverlayTrigger } from "react-bootstrap";
 
 import { SecondaryTheme, H2Line } from "../ThemeWrappers";
 
-/*const ProjectItemBackground = styled.div`
-    background-color: ${props => props.theme.backgroundSecondaryColor};
-    color: ${props => props.theme.textColor};
-    width: 100%;
-    height: 60%;
-`*/
+const projectThemeStyles = {
+    width: "100%",
+    height: "60%",
+    position: "relative",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center"
+}
+
+const hrStyles = {
+    width: "85%",
+    margin: 0,
+    position: "absolute",
+    top: -2
+}
 
 function ProjectItem(props) {
 
-    console.log(props.theme);
-
     return (
-
         <div className="project-item">
             <img src={props.src} alt={props.alt} />
-
-            <H2Line />
-            <SecondaryTheme style={{ width: "100%", height: "60%" }}>
+            <SecondaryTheme style={projectThemeStyles}>
+                <H2Line style={hrStyles} />
                 <div className="content">
                     <h3>{props.title}</h3>
                     <p>{props.description}</p>

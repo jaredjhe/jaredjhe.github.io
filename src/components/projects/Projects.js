@@ -39,10 +39,31 @@ function Projects(props) {
                             }}
                             theme={props.theme}
                         /></Col>
+                        <Col className="center-column"><ProjectItem
+                            src={PersonalWebsiteImg}
+                            alt={"Jared He's personal website"}
+                            title={"My Personal Website"}
+                            description={"This is the website that you are currently browsing! Designed from scratch without a template. Animations implemented using Framer Motion, and Dark Mode Toggle implemented with help from Styled Components. Recursive!"}                            
+                            icons={{
+                                "React": <FaReact />,
+                                "Sass": <FaSass />
+                            }}
+                            theme={props.theme}
+                        /></Col>
+                        <Col className="center-column"><ProjectItem
+                            src={PersonalWebsiteImg}
+                            alt={"Jared He's personal website"}
+                            title={"My Personal Website"}
+                            description={"This is the website that you are currently browsing! Designed from scratch without a template. Animations implemented using Framer Motion, and Dark Mode Toggle implemented with help from Styled Components. Recursive!"}                            
+                            icons={{
+                                "React": <FaReact />,
+                                "Sass": <FaSass />
+                            }}
+                            theme={props.theme}
+                        /></Col>
                     </Row>
                 </Container>
-
-                <p>© Jared He 2020</p>
+                <p id="copyright">© Jared He 2020</p>
             </div>
         </MainTheme>
     );
