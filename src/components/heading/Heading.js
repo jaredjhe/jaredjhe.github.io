@@ -1,6 +1,6 @@
 import "./heading.scss";
-import ToggleDarkMode from "./toggle-dark-mode";
-import { SecondaryTheme } from "./theme-wrappers";
+import ToggleDarkMode from "./ToggleDarkMode";
+import { SecondaryTheme } from "../ThemeWrappers";
 import { motion } from "framer-motion";
 
 function Heading(props) {

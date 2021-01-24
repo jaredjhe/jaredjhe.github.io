@@ -1,8 +1,8 @@
 import "./sidebar.scss";
 
-import ProfilePicture from "./profile-picture";
-import NavLinks from "./nav-links";
-import Contacts from "./contacts";
+import ProfilePicture from "./ProfilePicture";
+import NavLinks from "./NavLinks";
+import Contacts from "./Contacts";
 
 function Sidebar() {
     return (

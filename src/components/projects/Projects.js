@@ -1,5 +1,5 @@
 import "./projects.scss";
-import { MainTheme, H2Line } from "./theme-wrappers"
+import { MainTheme, H2Line } from "../ThemeWrappers"
 
 function Projects() {
     return (

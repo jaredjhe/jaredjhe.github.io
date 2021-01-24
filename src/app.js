@@ -3,11 +3,11 @@ import { useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { ThemeProvider } from "styled-components";
 
-import Sidebar from "./components/sidebar";
-import Heading from "./components/heading";
-import About from "./components/about";
-import Skills from "./components/skills";
-import Projects from "./components/projects"
+import Sidebar from "./components/navbar/Sidebar";
+import Heading from "./components/heading/Heading";
+import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects"
 
 
 const lightTheme = {

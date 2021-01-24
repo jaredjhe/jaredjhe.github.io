@@ -1,6 +1,6 @@
 import "./skills.scss";
-import SkillButton from "./skill-button";
-import { SecondaryTheme, H2Line } from "./theme-wrappers";
+import SkillButton from "./SkillButton";
+import { SecondaryTheme, H2Line } from "../ThemeWrappers";
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaJava } from "react-icons/fa";
 
 function Skills(props) {
