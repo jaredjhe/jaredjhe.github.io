@@ -66,4 +66,4 @@ package-lock.json
 src/reportWebVitals.js
 src/setupTests.js
 
-public/assets
+public/src/assets
