@@ -3,11 +3,13 @@
 
 .project-item {
     @include flex-center(column);
-    width: 80%;
+    width: 85%;
     height: 800px;
-    border-radius: $border-radius-button;
-    overflow: hidden;
     margin-top: 40px;
+
+    @media only screen and (max-width: $sm) {
+        height: 600px;
+    }
 
     img {
         width: 100%;
@@ -16,32 +18,48 @@
     }
 
     .content {
+        @include flex-center(column);
+        justify-content: space-between;
         width: 100%;
         height: 100%;
         padding: 0px 20px;
-        position: relative;
 
         h3 {
             text-align: center;
             font-weight: 700;
             font-size: 2em;
             margin-top: 20px;
+
+            @media only screen and (max-width: $lg) {
+                font-size: 1.5em;
+            }
+
+            @media only screen and (max-width: $sm) {
+                font-size: 1.2em;
+            }
         }
 
         p {
-            font-size: 1.5em;
+            font-size: 1.5vw;
+
+            @media only screen and (max-width: $lg) {
+                font-size: 1.8vw;
+            }
+
+            @media only screen and (max-width: $sm) {
+                font-size: 2.5vw;
+            }
+
+            @media only screen and (max-width: $xs) {
+                font-size: 3vw;
+            }
         }
 
         .project-icons {
             @include flex-center(row);
-            justify-content: flex-end;
-            position: absolute;
-            bottom: 40px;
-            right: 40px;
 
             .project-icon {
-                width: 50px;
-                height: auto;
+                font-size: 2.5em;
                 margin-right: 10px;
 
                 :hover {
