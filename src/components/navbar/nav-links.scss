@@ -6,7 +6,7 @@
         text-decoration: none;
 
         :hover {
-            color: green;
+            cursor: pointer;
         }
 
         .nav-link {
@@ -34,6 +34,7 @@
 
     a.active {
         text-decoration: none;
-        color: $main-color;
+        font-weight: 700;
+        color:#780116;
     }
 }

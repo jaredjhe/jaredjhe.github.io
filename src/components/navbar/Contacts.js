@@ -2,6 +2,7 @@ import "./contacts.scss"
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { motion } from "framer-motion";
+import Resume from "../../assets/resume.pdf";
 
 const iconStyles = {
     height: 50,
@@ -20,7 +21,7 @@ function Contacts() {
                 className="resume"
                 whileHover={{ scale: 1.1 }}
             >
-                <p>Resume</p>
+                <a href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
             </motion.div>
         </div>
     )

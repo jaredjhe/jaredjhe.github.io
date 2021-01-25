@@ -20,6 +20,10 @@
         text-transform: uppercase;
         font-size: 2.5rem;
         font-weight: 700;
+
+        @media only screen and (max-width: $md) {
+            font-size: 2rem;
+        }
     }
 
     hr {
