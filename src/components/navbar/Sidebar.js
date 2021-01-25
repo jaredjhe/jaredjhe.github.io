@@ -7,7 +7,7 @@ import Contacts from "./Contacts";
 function Sidebar() {
     return (
         <div className="sidebar">
-            <ProfilePicture />
+            {/*<ProfilePicture />*/}
             <h3>Jared He</h3>
             <hr />
             <div className="nav-links-sidebar">

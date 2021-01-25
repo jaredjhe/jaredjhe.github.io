@@ -14,7 +14,7 @@ function Contacts() {
         <div className="contacts">
             <div className="social-links">
                 <motion.a whileHover={{ scale: 1.1 }} href="https://github.com/jaredjhe" target="_blank" rel="noopener noreferrer"><FaGithubSquare style={iconStyles} /></motion.a>
-                <motion.a whileHover={{ scale: 1.1 }} href="mailto:" target="_blank" rel="noopener noreferrer"><IoMail style={iconStyles} /></motion.a>
+                {/*<motion.a whileHover={{ scale: 1.1 }} href="mailto:" target="_blank" rel="noopener noreferrer"><IoMail style={iconStyles} /></motion.a>*/}
                 <motion.a whileHover={{ scale: 1.1 }} href="https://www.linkedin.com/in/jaredhe/" target="_blank" rel="noopener noreferrer"><FaLinkedin style={iconStyles} /></motion.a>
             </div>
             <motion.div

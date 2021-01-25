@@ -2,11 +2,12 @@ import "./skills.scss";
 import SkillButton from "./SkillButton";
 import { SecondaryTheme, H2Line } from "../ThemeWrappers";
 import { Container, Col, Row } from "react-bootstrap";
+
 import { CgWebsite } from "react-icons/cg";
 import { FaServer, FaToolbox } from "react-icons/fa";
 
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaJava, FaPython, FaBootstrap, FaSass, FaGitAlt, FaFigma } from "react-icons/fa";
-import { SiAdobexd, SiLatex, SiC } from "react-icons/si";
+import { SiAdobexd, SiLatex } from "react-icons/si";
 
 function Skills(props) {
     return (
@@ -38,7 +39,7 @@ function Skills(props) {
                             <Row xs={2} md={3} xl={4} noGutters={true}>
                                 <Col><SkillButton color={"#F89820"} text={"Java"} logo={<FaJava />} theme={props.theme} /></Col>
                                 <Col><SkillButton color={"#4B8BBE"} text={"Python"} logo={<FaPython />} theme={props.theme} /></Col>
-                                <Col><SkillButton color={"#3747A6"} text={"C"} logo={<SiC />} theme={props.theme} /></Col>
+                                <Col><SkillButton color={"#3747A6"} text={"Racket"} logo={<FaServer />} theme={props.theme} /></Col>
                             </Row>
                         </Container>
                         <div className="skills-subtitle">

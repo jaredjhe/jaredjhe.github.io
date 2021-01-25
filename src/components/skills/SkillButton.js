@@ -14,6 +14,14 @@ const MainButton = styled.div`
     transition: all 1s ease;
 `
 
+const ButtonName = styled.p`
+    font-size: ${props => props.smallText ? "0.6em" : "1em"};
+
+    @media (max-width: 420px) {
+        font-size: ${props => props.smallText ? "0.4em" : "0.8em"};
+    }
+`
+
 function SkillButton(props) {
 
     const [isHovered, setIsHovered] = useState(false);
@@ -29,22 +37,20 @@ function SkillButton(props) {
         }
     }, [controls, inView]);
 
-    const fontSize = props.smallText ? { fontSize: "0.6em" } : { fontSize: "1em" };
-
     return (
-        <motion.div 
-        className="main-button"
-        ref={ref}
-        initial="hidden"
-        animate={controls}
-        variants={{
-            hidden: {
-                x: -50
-            },
-            visible: {
-                x: 0
-            }
-        }}
+        <motion.div
+            className="main-button"
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={{
+                hidden: {
+                    x: -50
+                },
+                visible: {
+                    x: 0
+                }
+            }}
         >
             <MainButton
                 color={props.color}
@@ -54,7 +60,7 @@ function SkillButton(props) {
                 onMouseLeave={() => setIsHovered(false)}
                 className="main-button-content"
             >
-                <p style={fontSize}>{props.text}</p>
+                <ButtonName smallText={props.smallText}>{props.text}</ButtonName>
                 {props.logo}
             </MainButton>
         </motion.div>

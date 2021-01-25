@@ -4,8 +4,11 @@ import { MainTheme, H2Line } from "../ThemeWrappers";
 import { Container, Row, Col } from "react-bootstrap";
 
 import PersonalWebsiteImg from "../../assets/project-images/personal-website.png";
+import IntegriTweetImg from "../../assets/project-images/integritweet.png";
+import CovEDImg from "../../assets/project-images/coved.png";
+import SkatezyImg from "../../assets/project-images/skatezy.png";
 
-import { FaBootstrap, FaHtml5, FaJs, FaReact, FaSass } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaFlask, FaHtml5, FaJs, FaNodeJs, FaPython, FaReact, FaSass } from "react-icons/fa";
 
 function Projects(props) {
     return (
@@ -26,43 +29,55 @@ function Projects(props) {
                             description={"This is the website that you are currently browsing! Designed from scratch without a template. Animations implemented using Framer Motion, and Dark Mode Toggle implemented with help from Styled Components."}
                             icons={{
                                 "React": <FaReact />,
-                                "Sass": <FaSass />,
                                 "HTML5": <FaHtml5 />,
+                                "Sass": <FaSass />,
                                 "JavaScript": <FaJs />,
                                 "Bootstrap": <FaBootstrap />
                             }}
                             theme={props.theme}
                         /></Col>
                         <Col className="center-column"><ProjectItem
-                            src={PersonalWebsiteImg}
-                            alt={"Jared He's personal website"}
-                            title={"My Personal Website"}
-                            description={"This is the website that you are currently browsing! Designed from scratch without a template. Animations implemented using Framer Motion, and Dark Mode Toggle implemented with help from Styled Components. Recursive!"}
+                            src={IntegriTweetImg}
+                            alt={"IntegriTweet"}
+                            title={"IntegriTweet"}
+                            link={"https://github.com/jaredjhe/IntegriTweet"}
+                            linkText={"Github"}
+                            description={"Website that verifies whether a user-uploaded Tweet was authentic or photoshopped using Google Cloud Vision API. Built for Hack the North 2021."}
                             icons={{
                                 "React": <FaReact />,
-                                "Sass": <FaSass />
+                                "HTML5": <FaHtml5 />,
+                                "CSS3": <FaCss3Alt />,
+                                "Node.js": <FaNodeJs />
                             }}
                             theme={props.theme}
                         /></Col>
                         <Col className="center-column"><ProjectItem
-                            src={PersonalWebsiteImg}
-                            alt={"Jared He's personal website"}
-                            title={"My Personal Website"}
-                            description={"This is the website that you are currently browsing! Designed from scratch without a template. Animations implemented using Framer Motion, and Dark Mode Toggle implemented with help from Styled Components. Recursive!"}
+                            src={CovEDImg}
+                            alt={"CovED"}
+                            link={"https://github.com/jaredjhe/CovED"}
+                            linkText={"Github"}
+                            title={"CovED"}
+                            description={"Website that compiles learning resources based on different high school curriculums around Canada. Built for students who are struggling through online learning during the COVID-19 pandemic."}
                             icons={{
-                                "React": <FaReact />,
-                                "Sass": <FaSass />
+                                "HTML5": <FaHtml5 />,
+                                "CSS3": <FaCss3Alt />,
+                                "JavaScript": <FaJs />,
+                                "Bootstrap": <FaBootstrap />
                             }}
                             theme={props.theme}
                         /></Col>
                         <Col className="center-column"><ProjectItem
-                            src={PersonalWebsiteImg}
-                            alt={"Jared He's personal website"}
-                            title={"My Personal Website"}
-                            description={"This is the website that you are currently browsing! Designed from scratch without a template. Animations implemented using Framer Motion, and Dark Mode Toggle implemented with help from Styled Components. Recursive!"}
+                            src={SkatezyImg}
+                            alt={"Skatezy"}
+                            link={"https://github.com/jaredjhe/Skatezy"}
+                            linkText={"Github"}
+                            title={"Skatezy"}
+                            description={"Web application that helps users track their figure skating skills and metrics."}
                             icons={{
-                                "React": <FaReact />,
-                                "Sass": <FaSass />
+                                "Flask": <FaFlask />,
+                                "Python": <FaPython />,
+                                "HTML5": <FaHtml5 />,
+                                "CSS3": <FaCss3Alt />,
                             }}
                             theme={props.theme}
                         /></Col>
