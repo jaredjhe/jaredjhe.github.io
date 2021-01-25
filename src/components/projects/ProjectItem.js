@@ -1,8 +1,11 @@
 import "./project-item.scss";
-import ProjectImageCover from "./ProjectImage";
+import ProjectImage from "./ProjectImage";
 import styled from "styled-components";
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
 import { SecondaryTheme, H2Line } from "../ThemeWrappers";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const ProjectItemBorder = styled.div`
     width: 100%;
@@ -30,10 +33,34 @@ const hrStyles = {
 
 function ProjectItem(props) {
 
+    const [ref, inView] = useInView();
+    const controls = useAnimation();
+
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        } else {
+            controls.start("hidden")
+        }
+    }, [controls, inView]);
+
     return (
-        <div className="project-item">
+        <motion.div
+            className="project-item"
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={{
+                hidden: {
+                    scale: 0.9
+                },
+                visible: {
+                    scale: 1
+                }
+            }}
+        >
             <ProjectItemBorder>
-                <ProjectImageCover src={props.src} alt={props.alt} link={props.link} linkText={props.linkText}/>
+                <ProjectImage src={props.src} alt={props.alt} link={props.link} linkText={props.linkText} />
                 <SecondaryTheme style={projectThemeStyles}>
                     <H2Line style={hrStyles} />
                     <div className="content">
@@ -50,7 +77,7 @@ function ProjectItem(props) {
                     </div>
                 </SecondaryTheme>
             </ProjectItemBorder>
-        </div>
+        </motion.div>
 
     )
 }

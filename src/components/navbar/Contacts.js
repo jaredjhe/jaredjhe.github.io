@@ -1,6 +1,7 @@
 import "./contacts.scss"
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 const iconStyles = {
     height: 50,
@@ -11,13 +12,16 @@ function Contacts() {
     return (
         <div className="contacts">
             <div className="social-links">
-                <a href="https://github.com/jaredjhe" target="_blank" rel="noopener noreferrer"><FaGithubSquare style={iconStyles} /></a>
-                <a href="mailto:" target="_blank" rel="noopener noreferrer"><IoMail style={iconStyles} /></a>
-                <a href="https://www.linkedin.com/in/jaredhe/" target="_blank" rel="noopener noreferrer"><FaLinkedin style={iconStyles} /></a>
+                <motion.a whileHover={{ scale: 1.1 }} href="https://github.com/jaredjhe" target="_blank" rel="noopener noreferrer"><FaGithubSquare style={iconStyles} /></motion.a>
+                <motion.a whileHover={{ scale: 1.1 }} href="mailto:" target="_blank" rel="noopener noreferrer"><IoMail style={iconStyles} /></motion.a>
+                <motion.a whileHover={{ scale: 1.1 }} href="https://www.linkedin.com/in/jaredhe/" target="_blank" rel="noopener noreferrer"><FaLinkedin style={iconStyles} /></motion.a>
             </div>
-            <div className="resume">
+            <motion.div
+                className="resume"
+                whileHover={{ scale: 1.1 }}
+            >
                 <p>Resume</p>
-            </div>
+            </motion.div>
         </div>
     )
 }
