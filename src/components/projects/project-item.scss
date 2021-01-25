@@ -11,12 +11,6 @@
         height: 600px;
     }
 
-    img {
-        width: 100%;
-        height: 40%;
-        object-fit: cover;
-    }
-
     .content {
         @include flex-center(column);
         justify-content: space-between;

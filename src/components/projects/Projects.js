@@ -20,8 +20,10 @@ function Projects(props) {
                         <Col className="center-column"><ProjectItem
                             src={PersonalWebsiteImg}
                             alt={"Jared He's personal website"}
+                            link={"https://old.reddit.com/r/uwaterloo"}
+                            linkText={"Recurse!"}
                             title={"Personal Website"}
-                            description={"This is the website that you are currently browsing! Designed from scratch without a template. Animations implemented using Framer Motion, and Dark Mode Toggle implemented with help from Styled Components. Recursive!"}
+                            description={"This is the website that you are currently browsing! Designed from scratch without a template. Animations implemented using Framer Motion, and Dark Mode Toggle implemented with help from Styled Components."}
                             icons={{
                                 "React": <FaReact />,
                                 "Sass": <FaSass />,

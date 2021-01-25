@@ -1,10 +1,10 @@
 import "./project-item.scss";
+import ProjectImageCover from "./ProjectImage";
 import styled from "styled-components";
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
-
 import { SecondaryTheme, H2Line } from "../ThemeWrappers";
 
-const Tester = styled.div`
+const ProjectItemBorder = styled.div`
     width: 100%;
     height: 100%;
     border: 3px solid ${props => props.theme.textColor};    
@@ -32,8 +32,8 @@ function ProjectItem(props) {
 
     return (
         <div className="project-item">
-            <Tester>
-                <img src={props.src} alt={props.alt} />
+            <ProjectItemBorder>
+                <ProjectImageCover src={props.src} alt={props.alt} link={props.link} linkText={props.linkText}/>
                 <SecondaryTheme style={projectThemeStyles}>
                     <H2Line style={hrStyles} />
                     <div className="content">
@@ -49,7 +49,7 @@ function ProjectItem(props) {
                         </div>
                     </div>
                 </SecondaryTheme>
-            </Tester>
+            </ProjectItemBorder>
         </div>
 
     )
