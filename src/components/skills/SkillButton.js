@@ -1,8 +1,9 @@
-import "./skill-button.scss";
 import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import styled from "styled-components";
-import { useInView } from "react-intersection-observer";
+
+import "./skill-button.scss";
 
 const MainButton = styled.div`
   background: ${(props) =>
@@ -20,16 +21,15 @@ const MainButton = styled.div`
 `;
 
 const ButtonName = styled.p`
-  font-size: ${(props) => (props.smallText ? "0.6em" : "1em")};
+  font-size: ${(props) => (props.smallText ? "0.4em" : "0.8em")};
 
-  @media (max-width: 420px) {
-    font-size: ${(props) => (props.smallText ? "0.4em" : "0.8em")};
+  @media (min-width: 375px) {
+    font-size: ${(props) => (props.smallText ? "0.6em" : "1em")};
   }
 `;
 
 function SkillButton(props) {
   const [isHovered, setIsHovered] = useState(false);
-
   const [ref, inView] = useInView();
   const controls = useAnimation();
 

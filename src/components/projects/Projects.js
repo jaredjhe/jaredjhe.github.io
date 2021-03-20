@@ -1,7 +1,9 @@
+import { Container, Row, Col } from "react-bootstrap";
+
 import "./projects.scss";
+
 import ProjectItem from "./ProjectItem";
 import { MainTheme, H2Line } from "../ThemeWrappers";
-import { Container, Row, Col } from "react-bootstrap";
 
 import PersonalWebsiteImg from "../../assets/project-images/personal-website.png";
 import IntegriTweetImg from "../../assets/project-images/integritweet.png";

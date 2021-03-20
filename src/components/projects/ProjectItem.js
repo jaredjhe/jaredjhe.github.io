@@ -1,11 +1,13 @@
-import "./project-item.scss";
-import ProjectImage from "./ProjectImage";
-import styled from "styled-components";
+import { useEffect } from "react";
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
-import { SecondaryTheme, H2Line } from "../ThemeWrappers";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import styled from "styled-components";
+
+import "./project-item.scss";
+
+import ProjectImage from "./ProjectImage";
+import { SecondaryTheme, H2Line } from "../ThemeWrappers";
 
 const ProjectItemBorder = styled.div`
   width: 100%;

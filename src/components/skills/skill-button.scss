@@ -18,11 +18,11 @@
     }
 
     svg {
-      font-size: 1.4em;
+      font-size: 1em;
       margin-left: 5px;
 
-      @media only screen and (max-width: $xs) {
-        font-size: 1em;
+      @media only screen and (min-width: $xs) {
+        font-size: 1.4em;
       }
     }
   }

@@ -1,4 +1,5 @@
 import "./toggle-dark-mode.scss";
+
 import { IoSunny, IoMoon } from "react-icons/io5";
 
 const sunStyles = {

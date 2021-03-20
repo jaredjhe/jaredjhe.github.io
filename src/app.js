@@ -1,7 +1,8 @@
-import "./app.scss";
 import { useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { ThemeProvider } from "styled-components";
+
+import "./app.scss";
 
 import Sidebar from "./components/navbar/Sidebar";
 import Heading from "./components/heading/Heading";
@@ -11,14 +12,14 @@ import Projects from "./components/projects/Projects";
 
 const lightTheme = {
   textColor: "#000000",
-  backgroundMainColor: "#E7E4E1",
-  backgroundSecondaryColor: "#FFFFFF",
+  backgroundMainColor: "#e7e4e1",
+  backgroundSecondaryColor: "#ffffff",
 };
 
 const darkTheme = {
-  textColor: "#FFFFFF",
+  textColor: "#ffffff",
   backgroundMainColor: "#000000",
-  backgroundSecondaryColor: "#7A7774",
+  backgroundSecondaryColor: "#7a7774",
 };
 
 const themes = {

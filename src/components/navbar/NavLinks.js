@@ -1,7 +1,7 @@
 import "./nav-links.scss";
 import { motion } from "framer-motion";
-
 import { Link } from "react-scroll";
+
 import { FaHome, FaTools, FaCogs } from "react-icons/fa";
 
 function NavLinks() {

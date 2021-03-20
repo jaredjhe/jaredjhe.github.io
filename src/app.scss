@@ -5,42 +5,43 @@ body {
   font-family: "Montserrat", "Verdana", sans-serif;
 
   h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 500;
 
-    @media only screen and (max-width: $md) {
+    @media only screen and (min-width: $sm) {
       font-size: 3rem;
     }
 
-    @media only screen and (max-width: $sm) {
-      font-size: 2.5rem;
+    @media only screen and (min-width: $md) {
+      font-size: 4rem;
     }
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
 
-    @media only screen and (max-width: $md) {
+    @media only screen and (min-width: $sm) {
       font-size: 2.5rem;
     }
 
-    @media only screen and (max-width: $sm) {
-      font-size: 2rem;
+    @media only screen and (min-width: $md) {
+      font-size: 3rem;
     }
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.25rem;
+    font-weight: 400;
     margin-bottom: 0;
 
-    @media only screen and (max-width: $md) {
+    @media only screen and (min-width: $sm) {
       font-size: 1.5rem;
     }
 
-    @media only screen and (max-width: $sm) {
-      font-size: 1.25rem;
+    @media only screen and (min-width: $md) {
+      font-size: 2rem;
     }
   }
 

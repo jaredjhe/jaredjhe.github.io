@@ -6,10 +6,6 @@
 
   .about-title {
     @include content-title;
-
-    p {
-      line-height: 175%;
-    }
   }
 
   span {

@@ -4,8 +4,8 @@ import { SecondaryTheme, H2Line } from "../ThemeWrappers";
 import { Container, Col, Row } from "react-bootstrap";
 
 import { CgWebsite } from "react-icons/cg";
+import { SiAdobexd, SiLatex, SiTailwindcss } from "react-icons/si";
 import { FaServer, FaToolbox } from "react-icons/fa";
-
 import {
   FaReact,
   FaHtml5,
@@ -18,7 +18,6 @@ import {
   FaGitAlt,
   FaFigma,
 } from "react-icons/fa";
-import { SiAdobexd, SiLatex } from "react-icons/si";
 
 function Skills(props) {
   return (
@@ -38,7 +37,7 @@ function Skills(props) {
               <Row xs={2} md={3} xl={4} noGutters={true}>
                 <Col>
                   <SkillButton
-                    color={"#57B6EC"}
+                    color={"#57b6ec"}
                     text={"React"}
                     logo={<FaReact />}
                     theme={props.theme}
@@ -46,7 +45,7 @@ function Skills(props) {
                 </Col>
                 <Col>
                   <SkillButton
-                    color={"#E34c26"}
+                    color={"#e34c26"}
                     text={"HTML5"}
                     logo={<FaHtml5 />}
                     theme={props.theme}
@@ -54,7 +53,7 @@ function Skills(props) {
                 </Col>
                 <Col>
                   <SkillButton
-                    color={"#2965F1"}
+                    color={"#2965f1"}
                     text={"CSS3"}
                     logo={<FaCss3Alt />}
                     theme={props.theme}
@@ -62,7 +61,7 @@ function Skills(props) {
                 </Col>
                 <Col>
                   <SkillButton
-                    color={"#EBCE14"}
+                    color={"#ccb100"}
                     text={"JavaScript"}
                     smallText={true}
                     logo={<FaJs />}
@@ -71,7 +70,7 @@ function Skills(props) {
                 </Col>
                 <Col>
                   <SkillButton
-                    color={"#563D7C"}
+                    color={"#563d7c"}
                     text={"Bootstrap"}
                     smallText={true}
                     logo={<FaBootstrap />}
@@ -80,9 +79,17 @@ function Skills(props) {
                 </Col>
                 <Col>
                   <SkillButton
-                    color={"#CC6699"}
+                    color={"#cc6699"}
                     text={"Sass"}
                     logo={<FaSass />}
+                    theme={props.theme}
+                  />
+                </Col>
+                <Col>
+                  <SkillButton
+                    color={"#06b6d4"}
+                    text={"Tailwind"}
+                    logo={<SiTailwindcss />}
                     theme={props.theme}
                   />
                 </Col>
@@ -96,7 +103,7 @@ function Skills(props) {
               <Row xs={2} md={3} xl={4} noGutters={true}>
                 <Col>
                   <SkillButton
-                    color={"#F89820"}
+                    color={"#f89820"}
                     text={"Java"}
                     logo={<FaJava />}
                     theme={props.theme}
@@ -104,7 +111,7 @@ function Skills(props) {
                 </Col>
                 <Col>
                   <SkillButton
-                    color={"#4B8BBE"}
+                    color={"#4b8bbe"}
                     text={"Python"}
                     logo={<FaPython />}
                     theme={props.theme}
@@ -112,7 +119,7 @@ function Skills(props) {
                 </Col>
                 <Col>
                   <SkillButton
-                    color={"#3747A6"}
+                    color={"#3747a6"}
                     text={"Racket"}
                     logo={<FaServer />}
                     theme={props.theme}
@@ -128,7 +135,7 @@ function Skills(props) {
               <Row xs={2} md={3} xl={4} noGutters={true}>
                 <Col>
                   <SkillButton
-                    color={"#F34F29"}
+                    color={"#f34f29"}
                     text={"Git"}
                     logo={<FaGitAlt />}
                     theme={props.theme}
@@ -136,7 +143,7 @@ function Skills(props) {
                 </Col>
                 <Col>
                   <SkillButton
-                    color={"#00C05B"}
+                    color={"#00c05b"}
                     text={"Figma"}
                     logo={<FaFigma />}
                     theme={props.theme}
@@ -144,7 +151,7 @@ function Skills(props) {
                 </Col>
                 <Col>
                   <SkillButton
-                    color={"#844CB0"}
+                    color={"#844cb0"}
                     text={"Adobe XD"}
                     smallText={true}
                     logo={<SiAdobexd />}

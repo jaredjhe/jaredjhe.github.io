@@ -2,6 +2,8 @@
 @import "../../sass-imports/mixins.scss";
 
 .nav-links {
+  @include flex-center(column);
+  
   a {
     text-decoration: none;
 
@@ -16,18 +18,18 @@
 
     svg {
       margin-right: 20px;
-      font-size: 1.5rem;
+      font-size: 1rem;
 
-      @media only screen and (max-width: $lg) {
-        font-size: 1rem;
+      @media only screen and (min-width: $lg) {
+        font-size: 1.5rem;
       }
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1rem;
 
-      @media only screen and (max-width: $lg) {
-        font-size: 1rem;
+      @media only screen and (min-width: $lg) {
+        font-size: 1.5rem;
       }
     }
   }

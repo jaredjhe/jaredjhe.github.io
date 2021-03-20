@@ -1,9 +1,11 @@
-import "./heading.scss";
-import ToggleDarkMode from "./ToggleDarkMode";
-import { SecondaryTheme } from "../ThemeWrappers";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+
+import "./heading.scss";
+
+import ToggleDarkMode from "./ToggleDarkMode";
+import { SecondaryTheme } from "../ThemeWrappers";
 
 function Heading(props) {
   const [ref, inView] = useInView();

@@ -4,15 +4,15 @@
 .project-item {
   @include flex-center(column);
   width: 85%;
-  height: 800px;
+  height: 500px;
   margin-top: 40px;
 
-  @media only screen and (max-width: $sm) {
+  @media only screen and (min-width: $xs) {
     height: 600px;
   }
 
-  @media only screen and (max-width: $xs) {
-    height: 500px;
+  @media only screen and (min-width: $sm) {
+    height: 800px;
   }
 
   .content {
@@ -25,49 +25,46 @@
     h3 {
       text-align: center;
       font-weight: 700;
-      font-size: 2em;
+      font-size: 1.2rem;
       margin-top: 20px;
 
-      @media only screen and (max-width: $lg) {
-        font-size: 1.5em;
+      @media only screen and (min-width: $sm) {
+        font-size: 1.5rem;
       }
 
-      @media only screen and (max-width: $sm) {
-        font-size: 1.2em;
+      @media only screen and (min-width: $lg) {
+        font-size: 2rem;
       }
     }
 
     p {
-      font-size: 1.5vw;
+      font-size: 0.8rem;
 
-      @media only screen and (max-width: $lg) {
-        font-size: 1.8vw;
+      @media only screen and (min-width: $xs) {
+        font-size: 1rem;
       }
 
-      @media only screen and (max-width: $sm) {
-        font-size: 2.5vw;
-      }
-
-      @media only screen and (max-width: $xs) {
-        font-size: 3vw;
+      @media only screen and (min-width: $md) {
+        font-size: 1.25rem;
       }
     }
+  }
 
-    .project-icons {
-      @include flex-center(row);
+  .project-icons {
+    @include flex-center(row);
 
-      .project-icon {
-        font-size: 2.5em;
-        margin-right: 10px;
+    .project-icon {
+      font-size: 2rem;
+      margin-right: 10px;
+      margin-bottom: 20px;
 
-        @media only screen and (max-width: $xs) {
-          font-size: 2em;
-          margin-bottom: 20px;
-        }
+      @media only screen and (min-width: $xs) {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+      }
 
-        :hover {
-          color: $main-color;
-        }
+      :hover {
+        color: $main-color;
       }
     }
   }
