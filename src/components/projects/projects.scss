@@ -2,20 +2,20 @@
 @import "../../sass-imports/mixins.scss";
 
 .projects {
-    @include content-padding;
-    padding-bottom: 10px;
+  @include content-padding;
+  padding-bottom: 10px;
 
-    .projects-title {
-        @include content-title;
-    }
+  .projects-title {
+    @include content-title;
+  }
 
-    .center-column {
-        @include flex-center(column);
-    }
+  .center-column {
+    @include flex-center(column);
+  }
 
-    #copyright {
-        text-align: center;
-        font-size: 1em;
-        margin-top: 50px;
-    }
+  #copyright {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 50px;
+  }
 }

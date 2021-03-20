@@ -2,7 +2,7 @@
 @import "../../sass-imports/mixins.scss";
 
 .heading {
-    @include content-padding;
-    @include flex-center(row);
-    justify-content: space-between;
+  @include content-padding;
+  @include flex-center(row);
+  justify-content: space-between;
 }

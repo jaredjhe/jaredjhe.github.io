@@ -2,17 +2,17 @@
 @import "../../sass-imports/mixins.scss";
 
 .about {
-    @include content-padding;
+  @include content-padding;
 
-    .about-title {
-        @include content-title;
+  .about-title {
+    @include content-title;
 
-        p {
-            line-height: 175%;
-        }
+    p {
+      line-height: 175%;
     }
+  }
 
-    span {
-        color: $main-color;
-    }
+  span {
+    color: $main-color;
+  }
 }

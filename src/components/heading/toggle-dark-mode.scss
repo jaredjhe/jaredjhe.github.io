@@ -5,48 +5,50 @@ $toggle-width: 80px;
 $toggle-height: $toggle-width / 2;
 
 .toggle-dark-mode {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    margin-bottom: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
 
-    .toggle-dark-mode-input {
-        display: none;
+  .toggle-dark-mode-input {
+    display: none;
+  }
+
+  .toggle-dark-mode-fill {
+    position: relative;
+    width: $toggle-width;
+    height: $toggle-height;
+    border-radius: $border-radius-button;
+    background-color: $background-main-color-l;
+    border: 3px solid black;
+    transition: all 0.5s ease;
+
+    .toggle-dark-mode-icon {
+      @include flex-center(row);
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: $toggle-height;
+      height: $toggle-height;
+      border-radius: $border-radius-button;
+      background-color: $main-color;
+      box-shadow: 0 0 10px rgba($color: black, $alpha: 0.75);
+      transition: all 0.5s ease;
     }
+  }
 
-    .toggle-dark-mode-fill {
-        position: relative;
-        width: $toggle-width;
-        height: $toggle-height;
-        border-radius: $border-radius-button;
-        background-color: $background-main-color-l;
-        border: 3px solid black;
-        transition: all 0.5s ease;
+  .toggle-dark-mode-input:checked + .toggle-dark-mode-fill {
+    background-color: $background-main-color-d;
+    border: 3px solid white;
+  }
 
-        .toggle-dark-mode-icon {
-            @include flex-center(row);
-            position: absolute;
-            top: -3px;
-            left: -3px;
-            width: $toggle-height;
-            height: $toggle-height;
-            border-radius: $border-radius-button;
-            background-color: $main-color;
-            box-shadow: 0 0 10px rgba($color: black, $alpha: 0.75);
-            transition: all 0.5s ease;
-        }
-    }
-
-    .toggle-dark-mode-input:checked + .toggle-dark-mode-fill {
-        background-color: $background-main-color-d;
-        border: 3px solid white;
-    }
-
-    .toggle-dark-mode-input:checked + .toggle-dark-mode-fill > .toggle-dark-mode-icon {
-        position: absolute;
-        top: -3px;
-        left: -3px;
-        box-shadow: 0 0 10px rgba($color: white, $alpha: 0.75);
-        transform: translateX($toggle-height);
-    }
+  .toggle-dark-mode-input:checked
+    + .toggle-dark-mode-fill
+    > .toggle-dark-mode-icon {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    box-shadow: 0 0 10px rgba($color: white, $alpha: 0.75);
+    transform: translateX($toggle-height);
+  }
 }

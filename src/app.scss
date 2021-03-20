@@ -2,49 +2,49 @@
 @import "./sass-imports/variables.scss";
 
 body {
-    font-family: "Montserrat", "Verdana", sans-serif;
+  font-family: "Montserrat", "Verdana", sans-serif;
 
-    h1 {
-        font-size: 4rem;
-        font-weight: 500;
+  h1 {
+    font-size: 4rem;
+    font-weight: 500;
 
-        @media only screen and (max-width: $md) {
-            font-size: 3rem;
-        }
-
-        @media only screen and (max-width: $sm) {
-            font-size: 2.5rem;
-        }
+    @media only screen and (max-width: $md) {
+      font-size: 3rem;
     }
 
-    h2 {
-        font-size: 3rem;
-        font-weight: 700;
-        text-transform: uppercase;
+    @media only screen and (max-width: $sm) {
+      font-size: 2.5rem;
+    }
+  }
 
-        @media only screen and (max-width: $md) {
-            font-size: 2.5rem;
-        }
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
 
-        @media only screen and (max-width: $sm) {
-            font-size: 2rem;
-        }
+    @media only screen and (max-width: $md) {
+      font-size: 2.5rem;
     }
 
-    p {
-        font-size: 2rem;
-        margin-bottom: 0;
+    @media only screen and (max-width: $sm) {
+      font-size: 2rem;
+    }
+  }
 
-        @media only screen and (max-width: $md) {
-            font-size: 1.5rem;
-        }
+  p {
+    font-size: 2rem;
+    margin-bottom: 0;
 
-        @media only screen and (max-width: $sm) {
-            font-size: 1.25rem;
-        }
+    @media only screen and (max-width: $md) {
+      font-size: 1.5rem;
     }
 
-    span {
-        color: $main-color;
+    @media only screen and (max-width: $sm) {
+      font-size: 1.25rem;
     }
+  }
+
+  span {
+    color: $main-color;
+  }
 }

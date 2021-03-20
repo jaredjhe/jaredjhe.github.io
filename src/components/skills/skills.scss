@@ -2,27 +2,27 @@
 @import "../../sass-imports/mixins.scss";
 
 .skills-scroll-wrapper {
-    padding: 2px 0px;
-    
-    .skills {
-        @include content-padding;
+  padding: 2px 0px;
 
-        .skills-title {
-            @include content-title;
-        }
+  .skills {
+    @include content-padding;
 
-        .skills-subtitle {
-            @include flex-center(row);
-            padding-top: 20px;
-
-            svg {
-                margin-right: 20px;
-                font-size: 2em;
-            }
-        }
-
-        #front-end {
-            padding-top: 0;
-        }
+    .skills-title {
+      @include content-title;
     }
+
+    .skills-subtitle {
+      @include flex-center(row);
+      padding-top: 20px;
+
+      svg {
+        margin-right: 20px;
+        font-size: 2em;
+      }
+    }
+
+    #front-end {
+      padding-top: 0;
+    }
+  }
 }
