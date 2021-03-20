@@ -1,8 +1,12 @@
+import { motion } from "framer-motion";
+
 import "./contacts.scss";
+
+import Resume from "../../assets/resume.pdf";
+
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { motion } from "framer-motion";
-import Resume from "../../assets/resume.pdf";
+import { CgExternal } from "react-icons/cg";
 
 const iconStyles = {
   height: 50,
@@ -35,6 +39,7 @@ function Contacts() {
         <a href={Resume} target="_blank" rel="noopener noreferrer">
           Resume
         </a>
+        <CgExternal />
       </motion.div>
     </div>
   );
