@@ -37,7 +37,18 @@ function Heading(props) {
             },
           }}
         >
-          Hi, I'm <span>Jared He!</span>
+          Hi, I'm{" "}
+          <span
+            style={
+              props.theme === "light"
+                ? { border: "none" }
+                : {
+                    textShadow: "0px 0px 5px black"
+                  }
+            }
+          >
+            Jared He!
+          </span>
         </motion.h1>
         <ToggleDarkMode theme={props.theme} setTheme={props.setTheme} />
       </div>
