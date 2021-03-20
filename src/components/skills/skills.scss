@@ -13,10 +13,10 @@
 
     .skills-subtitle {
       @include flex-center(row);
-      padding-top: 20px;
+      padding-top: 16px;
 
       svg {
-        margin-right: 20px;
+        margin-right: 24px;
         font-size: 2em;
       }
     }

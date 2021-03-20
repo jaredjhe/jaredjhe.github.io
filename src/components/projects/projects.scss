@@ -3,7 +3,7 @@
 
 .projects {
   @include content-padding;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 
   .projects-title {
     @include content-title;
@@ -16,6 +16,6 @@
   #copyright {
     text-align: center;
     font-size: 1em;
-    margin-top: 50px;
+    margin-top: 48px;
   }
 }

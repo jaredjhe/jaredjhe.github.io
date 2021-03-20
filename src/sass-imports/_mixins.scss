@@ -8,10 +8,10 @@
 }
 
 @mixin content-padding {
-  padding: 30px 50px;
+  padding: 32px 24px;
 
   @media only screen and (min-width: $sm) {
-    padding: 50px 50px;
+    padding: 48px 48px;
   }
 }
 
@@ -19,7 +19,7 @@
   @include flex-center(column);
 
   h2 {
-    margin-right: 30px;
+    margin-right: 32px;
     white-space: nowrap;
   }
 

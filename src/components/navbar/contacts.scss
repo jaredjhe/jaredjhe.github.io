@@ -19,8 +19,8 @@
 
   .resume {
     @include flex-center(row);
-    width: 50%;
-    height: 40%;
+    width: 240px;
+    height: 64px;
     border: 3px solid white;
     border-radius: $border-radius-button;
     background-color: $main-color;

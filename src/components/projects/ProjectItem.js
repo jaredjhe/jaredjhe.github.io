@@ -13,7 +13,7 @@ const ProjectItemBorder = styled.div`
   width: 100%;
   height: 100%;
   border: 3px solid ${(props) => props.theme.textColor};
-  border-radius: 90px;
+  border-radius: 45px;
   overflow: hidden;
 `;
 

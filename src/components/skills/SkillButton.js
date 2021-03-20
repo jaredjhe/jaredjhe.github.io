@@ -16,7 +16,7 @@ const MainButton = styled.div`
   border: 3px solid ${(props) => props.theme.textColor};
   width: 100%;
   height: 100%;
-  margin: 20px 0px;
+  margin: 24px 0px;
   transition: all 1s ease;
 `;
 
