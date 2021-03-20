@@ -89,6 +89,7 @@ function Skills(props) {
                   <SkillButton
                     color={"#06b6d4"}
                     text={"Tailwind"}
+                    smallText={true}
                     logo={<SiTailwindcss />}
                     theme={props.theme}
                   />

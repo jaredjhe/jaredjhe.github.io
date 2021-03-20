@@ -1,30 +1,32 @@
-import "./project-image.scss";
 import { useState } from "react";
 import { motion, useAnimation } from "framer-motion";
+
+import "./project-image.scss";
+
 import { CgExternal } from "react-icons/cg";
 
 function ProjectImage(props) {
-  const [isHovered, setIsHovered] = useState(false);
+  const [opacity, setOpacity] = useState({ filter: "none" });
+  const [displayStyle, setDisplayStyle] = useState( { display: "none" } );
   const buttonControls = useAnimation();
 
-  // Animation for External Link Button
-  if (isHovered) {
+  const handleMouseOver = (e) => {
+    setOpacity({ filter: "grayscale(50%) blur(4px)" });
+    setDisplayStyle({ display: "flex" });
     buttonControls.start("visible");
-  } else {
-    buttonControls.start("hidden");
   }
 
-  const opacity = isHovered
-    ? { filter: "grayscale(50%) blur(4px)", transition: "all .5s ease" }
-    : { transition: "all .5s ease" };
-
-  const displayStyle = isHovered ? { display: "flex" } : { display: "none" };
+  const handleMouseOut = () => {
+    setOpacity({ filter: "none" });
+    setDisplayStyle({ display: "none" });
+    buttonControls.start("hidden");
+  }
 
   return (
     <div
       className="project-image"
-      onMouseOver={() => setIsHovered(true)}
-      onMouseOut={() => setIsHovered(false)}
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
     >
       <div className="link-button-wrapper" style={displayStyle}>
         <motion.div
@@ -49,7 +51,7 @@ function ProjectImage(props) {
           <CgExternal />
         </motion.div>
       </div>
-      <img src={props.src} alt={props.alt} style={opacity} />
+      <img src={props.src} alt={props.alt} style={opacity}/>
     </div>
   );
 }
