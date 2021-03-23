@@ -20,19 +20,11 @@ const MainButton = styled.div`
   transition: all 1s ease;
 `;
 
-const ButtonName = styled.p`
-  font-size: ${(props) => (props.smallText ? "0.4em" : "0.8em")};
-
-  @media (min-width: 375px) {
-    font-size: ${(props) => (props.smallText ? "0.6em" : "1em")};
-  }
-`;
-
 function SkillButton(props) {
   const [isHovered, setIsHovered] = useState(false);
   const [ref, inView] = useInView();
   const controls = useAnimation();
-
+  
   useEffect(() => {
     if (inView) {
       controls.start("visible");
@@ -64,7 +56,7 @@ function SkillButton(props) {
         onMouseLeave={() => setIsHovered(false)}
         className="main-button-content"
       >
-        <ButtonName smallText={props.smallText}>{props.text}</ButtonName>
+        {props.smallText ? <p className="small-text">{props.text}</p> : <p className="normal-text">{props.text}</p>}
         {props.logo}
       </MainButton>
     </motion.div>
