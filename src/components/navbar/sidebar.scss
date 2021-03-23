@@ -9,6 +9,7 @@
   color: white;
   position: fixed;
   display: none;
+  z-index: 10;
 
   @media only screen and (min-width: $xs) {
     display: flex;

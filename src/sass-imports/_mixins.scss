@@ -11,6 +11,10 @@
   padding: 32px 24px;
 
   @media only screen and (min-width: $sm) {
+    padding: 32px 32px;
+  }
+
+  @media only screen and (min-width: $md) {
     padding: 48px 48px;
   }
 }
