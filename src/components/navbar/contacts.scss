@@ -19,11 +19,15 @@
 
   .resume {
     @include flex-center(row);
-    width: 240px;
+    width: 200px;
     height: 64px;
     border: 3px solid white;
     border-radius: $border-radius-button;
     background-color: $main-color;
+    
+    @media only screen and (min-width: $xs) {
+      width: 240px;
+    }
 
     a {
       text-transform: uppercase;
