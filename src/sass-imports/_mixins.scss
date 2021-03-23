@@ -19,8 +19,11 @@
   @include flex-center(column);
 
   h2 {
-    margin-right: 32px;
     white-space: nowrap;
+
+    @media only screen and (min-width: $xs) {
+      margin-right: 32px;
+    }
   }
 
   @media only screen and (min-width: $xs) {

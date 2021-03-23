@@ -24,7 +24,7 @@ function SkillButton(props) {
   const [isHovered, setIsHovered] = useState(false);
   const [ref, inView] = useInView();
   const controls = useAnimation();
-  
+
   useEffect(() => {
     if (inView) {
       controls.start("visible");
@@ -56,7 +56,11 @@ function SkillButton(props) {
         onMouseLeave={() => setIsHovered(false)}
         className="main-button-content"
       >
-        {props.smallText ? <p className="small-text">{props.text}</p> : <p className="normal-text">{props.text}</p>}
+        {props.smallText ? (
+          <p className="small-text">{props.text}</p>
+        ) : (
+          <p className="normal-text">{props.text}</p>
+        )}
         {props.logo}
       </MainButton>
     </motion.div>

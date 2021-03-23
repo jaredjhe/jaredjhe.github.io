@@ -43,7 +43,7 @@ function Heading(props) {
               props.theme === "light"
                 ? { border: "none" }
                 : {
-                    textShadow: "0px 0px 5px black"
+                    textShadow: "0px 0px 5px black",
                   }
             }
           >
