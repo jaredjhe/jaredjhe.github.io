@@ -13,5 +13,9 @@
     @media only screen and (min-width: $sm) {
       flex-direction: row;
     }
+
+    #name-pre {
+      white-space: pre;
+    }
   }
 }

@@ -7,20 +7,20 @@ import { CgExternal } from "react-icons/cg";
 
 function ProjectImage(props) {
   const [opacity, setOpacity] = useState({ filter: "none" });
-  const [displayStyle, setDisplayStyle] = useState( { display: "none" } );
+  const [displayStyle, setDisplayStyle] = useState({ display: "none" });
   const buttonControls = useAnimation();
 
   const handleMouseOver = (e) => {
     setOpacity({ filter: "grayscale(50%) blur(4px)" });
     setDisplayStyle({ display: "flex" });
     buttonControls.start("visible");
-  }
+  };
 
   const handleMouseOut = () => {
     setOpacity({ filter: "none" });
     setDisplayStyle({ display: "none" });
     buttonControls.start("hidden");
-  }
+  };
 
   return (
     <div
@@ -51,7 +51,7 @@ function ProjectImage(props) {
           <CgExternal />
         </motion.div>
       </div>
-      <img src={props.src} alt={props.alt} style={opacity}/>
+      <img src={props.src} alt={props.alt} style={opacity} />
     </div>
   );
 }

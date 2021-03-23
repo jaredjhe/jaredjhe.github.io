@@ -38,7 +38,7 @@ function Heading(props) {
             },
           }}
         >
-          <h1 style={{whiteSpace: "pre"}}>Hi, I'm </h1>
+          <h1 id="name-pre">Hi, I'm </h1>
           <h1>
             <span
               style={
