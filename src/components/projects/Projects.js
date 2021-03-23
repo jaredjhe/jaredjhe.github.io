@@ -31,7 +31,7 @@ function Projects(props) {
           <H2Line />
         </div>
         <Container style={{ paddingLeft: 0, paddingRight: 0 }} fluid>
-          <Row xs={1} md={2} noGutters={true}>
+          <Row xs={1} lg={2} noGutters={true}>
             <Col className="center-column">
               <ProjectItem
                 src={PersonalWebsiteImg}

@@ -34,10 +34,10 @@ function App() {
     <ThemeProvider theme={themes[theme]}>
       <Container style={{ paddingLeft: 0, paddingRight: 0 }} fluid>
         <Row noGutters={true}>
-          <Col sm={3}>
+          <Col md={3}>
             <Sidebar />
           </Col>
-          <Col sm={9}>
+          <Col md={9}>
             <div id="home-scroll">
               <Heading theme={theme} setTheme={setTheme} />
               <About />

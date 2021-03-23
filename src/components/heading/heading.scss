@@ -5,4 +5,13 @@
   @include content-padding;
   @include flex-center(row);
   justify-content: space-between;
+
+  .name {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: $sm) {
+      flex-direction: row;
+    }
+  }
 }

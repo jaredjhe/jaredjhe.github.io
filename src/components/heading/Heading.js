@@ -22,7 +22,8 @@ function Heading(props) {
   return (
     <SecondaryTheme>
       <div className="heading">
-        <motion.h1
+        <motion.div
+          className="name"
           ref={ref}
           initial="hidden"
           animate={controls}
@@ -37,19 +38,21 @@ function Heading(props) {
             },
           }}
         >
-          Hi, I'm{" "}
-          <span
-            style={
-              props.theme === "light"
-                ? { border: "none" }
-                : {
-                    textShadow: "0px 0px 5px black",
-                  }
-            }
-          >
-            Jared He!
-          </span>
-        </motion.h1>
+          <h1 style={{whiteSpace: "pre"}}>Hi, I'm </h1>
+          <h1>
+            <span
+              style={
+                props.theme === "light"
+                  ? { border: "none" }
+                  : {
+                      textShadow: "0px 0px 5px black",
+                    }
+              }
+            >
+              Jared He!
+            </span>
+          </h1>
+        </motion.div>
         <ToggleDarkMode theme={props.theme} setTheme={props.setTheme} />
       </div>
     </SecondaryTheme>

@@ -10,9 +10,7 @@ function Sidebar() {
       {/*<ProfilePicture />*/}
       <h3>Jared He</h3>
       <hr />
-      <div className="nav-links-sidebar">
-        <NavLinks />
-      </div>
+      <NavLinks />
       <hr />
       <Contacts />
     </div>

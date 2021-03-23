@@ -9,7 +9,7 @@
   color: white;
   position: fixed;
   display: none;
-  
+
   @media only screen and (min-width: $xs) {
     display: flex;
   }
@@ -35,18 +35,5 @@
     background-color: white;
     width: 75%;
     height: 3px;
-  }
-
-  .nav-links-sidebar {
-    width: 75%;
-
-    .nav-links {
-      @include flex-center(column);
-      align-items: flex-start;
-    }
-
-    @media only screen and (min-width: $md) {
-      width: 50%;
-    }
   }
 }
