@@ -36,7 +36,7 @@ function Projects(props) {
               <ProjectItem
                 src={PersonalWebsiteImg}
                 alt={"Jared He's personal website"}
-                link={""}
+                link={"https://jaredhe.com/"}
                 linkText={"Recurse!"}
                 title={"Personal Website"}
                 description={
