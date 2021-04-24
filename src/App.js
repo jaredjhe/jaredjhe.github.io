@@ -6,6 +6,7 @@ import "./app.scss";
 
 import Sidebar from "./components/navbar/Sidebar";
 import Heading from "./components/heading/Heading";
+import MobileBar from "./components/navbar/MobileBar";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
@@ -40,6 +41,7 @@ function App() {
           <Col md={9}>
             <div id="home-scroll">
               <Heading theme={theme} setTheme={setTheme} />
+              <MobileBar />
               <About />
             </div>
             <Skills theme={theme} />

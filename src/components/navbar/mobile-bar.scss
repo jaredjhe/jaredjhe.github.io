@@ -1,0 +1,28 @@
+@import "../../sass-imports/variables.scss";
+@import "../../sass-imports/mixins.scss";
+
+.mobile-bar {
+  @include flex-center(column);
+  padding: 24px 0px;
+  background-color: $sidebar-color;
+  color: white;
+  display: flex;
+
+  @media only screen and (min-width: $sm) {
+    display: none;
+  }
+
+  img {
+    width: 45%;
+  }
+
+  .contacts {
+    height: 144px;
+  }
+
+  hr {
+    background-color: white;
+    width: 75%;
+    height: 3px;
+  }
+}

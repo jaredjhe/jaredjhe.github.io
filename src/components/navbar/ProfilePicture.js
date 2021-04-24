@@ -1,10 +1,12 @@
+import "./profile-picture.scss"
+
 import profilePictureImage from "../../assets/profile-picture.jpg";
 
 function ProfilePicture() {
   return (
     <img
+      id="profile-picture"
       src={profilePictureImage}
-      style={{ width: "60%", height: "auto", borderRadius: "50%" }}
       alt="Jared He"
     />
   );
