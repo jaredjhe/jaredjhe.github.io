@@ -41,7 +41,7 @@ function ProjectImage(props) {
           src={props.src}
           alt={props.alt}
           style={{
-            filter: isImageHovered ? "grayscale(50%) blur(4px)" : "none",
+            filter: isImageHovered ? "grayscale(100%) opacity(30%)" : "none",
           }}
         />
       </motion.div>
