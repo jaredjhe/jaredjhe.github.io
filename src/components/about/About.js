@@ -12,7 +12,7 @@ function About() {
         <p>
           Hello! I'm an aspiring software engineer currently studying Computer
           Science at the <span>University of Waterloo.</span> Right now I'm
-          learning Node.js and C. You can keep scrolling to check out some of my
+          learning C++. You can keep scrolling to check out some of my
           projects I've been working on. Or you can reach me at any of the
           contacts found on <span>the sidebar!</span>
         </p>
