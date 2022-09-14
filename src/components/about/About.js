@@ -11,8 +11,8 @@ function About() {
         </div>
         <p>
           Hello! I'm an aspiring software engineer currently studying Computer
-          Science at the <span>University of Waterloo.</span> Right now I'm
-          learning C++. You can keep scrolling to check out some of my
+          Science at the <span>University of Waterloo.</span> I'm
+          learning ARM and MIPS. You can keep scrolling to check out some of my
           projects I've been working on. Or you can reach me at any of the
           contacts found on <span>the sidebar!</span>
         </p>
